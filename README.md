@@ -3,25 +3,10 @@
 > Quran API with media audio ***Syekh. Mishary Rashid Al-Afasy murrotal***.
 
 ### Deployment
-> This API has lived at: https://api.quran.gading.dev
+> This API has lived at: https://api-ngaji-time.vercel.app/
 
-#### Terms of using Live API that hosted in https://api.quran.gading.dev
+#### Terms of using Live API that hosted in https://api-ngaji-time.vercel.app/
 FYI, this ***Live API*** already has a rate limiter of `10req/5min/address` and `150req/5min for the whole server`. So, you can't rely on this ***Live API*** for continuous use. But, you can cache the API result into *local/client storage*, and your app doesn't need to request the API frequently.
-
-On the other side, it's ***highly recommended*** to deploy this API with yourself, just click the [Deploy button](#deploy-your-own) below, or clone this repository and deploy it wherever cloud/server you want.
-
-#### Deploy your own!
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fsutanlab%2Fquran-api)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/afrizaloky/quran-api/tree/heroku-deploy)
-
-#### What is the reason behind I limit the incoming requests in this *Live API*?
-Yeah, of course I'm glad that this API is known and used by many people. But unfortunately, [Vercel Team](https://vercel.com) noticed that my *Personal Account* has reached its limit. So, that the reason is.
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/38345393/172392200-a5297480-ff57-4300-8360-95e3cc7d271d.png" />
-</div>
-
----
 
 ### Introduction
 This API data source comes from the combination of several parameters from [api.alquran.cloud](https://api.alquran.cloud) and [quran.kemenag.go.id](https://quran.kemenag.go.id) by merging its data to one JSON file with new structure for the better use and performance. Futhermore, this api uses indexed querying techniques with `0(1)` access time which is greatly affects performance.
@@ -67,19 +52,3 @@ This API data source comes from the combination of several parameters from [api.
 > Fetching on [Surah 7](https://api.quran.gading.dev/surah/7) with audio, en translation & transliteration, id translation & tafsir (a lot more data and hosted on free serverless). ***Result: 400++ ms***
 
 [![api.quran.gading.dev](https://raw.githubusercontent.com/sutanlab/quran-api/master/screenshots/api.quran.sutanlab.id.jpeg)](https://raw.githubusercontent.com/sutanlab/quran-api/master/screenshots/api.quran.sutanlab.id.jpeg)
-
-### LICENSE
-MIT
-
-### Support Me
-
-#### Global
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B71P7PB)
-
-#### Indonesia
-- [Yapp](https://yapp.ink/gading)
-- [Trakteer](https://trakteer.id/gadingnst)
-- [Karyakarsa](https://karyakarsa.com/gadingnst)
-
----
-Copyright © 2020 by Sutan Gading Fadhillah Nasution
